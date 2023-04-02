@@ -8,7 +8,7 @@ stages:
     outs:
     - data/raw/winequality.csv
 
-  split_data:
+split_data:
     cmd: python src/split_data.py --config=params.yaml
     deps:
     - src/split_data.py
